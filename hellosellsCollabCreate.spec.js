@@ -19,8 +19,6 @@ test('hellosells collab creation', async({page})=>{
   await page.getByTestId('addteam-button').click();
   await page.getByPlaceholder('Team name').fill(collabName);
   await page.getByTestId('add-member').click();
-  //await page.getByTestId('addteam-button').click();
- // await page.waitForSelector('TestId=search-input')
   await page.getByTestId('search-input').click();
 
    
@@ -28,9 +26,6 @@ test('hellosells collab creation', async({page})=>{
     await li.click();
    }
    
-  
-
-  //await page.locator('xpath=.//button[@class="g-btn-primary "]').click();
-  await page.getByRole('button', { name: 'Save' }).click();
+   await page.getByRole('button', { name: 'Save' }).click();
  
 })
