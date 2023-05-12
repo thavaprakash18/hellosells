@@ -1,4 +1,3 @@
-//const {test, expect} = require('@playwright/test');
 const{username,loginURL,password,inboxURL}=require("./hellosellsCollabData")
 
 
